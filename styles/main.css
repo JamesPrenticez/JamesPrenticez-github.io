@@ -1,0 +1,129 @@
+/* -------------------- Color Pallet -------------------- */
+/*
+Tyrian Purple: #5F0F40
+Ruby Red: #9A031E
+Dark Orange: #FB8B24
+Spanish Orange: #E36414
+Midnight Green: #0F4C5C
+*/
+/* -------------------- Super Globals -------------------- */
+body {
+background-color: smokewhite;
+margin: 0px;
+font-family: verdana;
+color: white;
+margin-top: 0;
+margin-left: 0;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
+h1 {
+    font-size: 4em;
+}
+/* -------------------- Grid Container -------------------- */
+main {
+display: grid;
+grid-template-areas:
+"header header header"
+"left middle right"
+"footer footer footer";
+grid-template-columns: 100px auto 100px;
+grid-template-rows: auto auto 150px;
+}
+
+/* -------------------- Grid Items -------------------- */
+header {
+grid-area: header;
+background-color: black;
+background-image: linear-gradient(to right, #E36414 , #FB8B24);
+}
+
+left {
+grid-area: left;
+background-color: whitesmoke;
+}
+
+middle {
+grid-area: middle;
+min-height: 500px;
+min-width: 500px;
+background-color: whitesmoke;
+display: flex;
+justify-content: center;
+padding:  5px 5px 5px 5px;
+color: black;
+}
+
+right {
+grid-area: right;
+background-color: whitesmoke;
+}
+
+footer {
+grid-area: footer;
+background-color: black;
+background-image: linear-gradient(to right, #E36414 , #FB8B24);
+display: flex;
+justify-content: center;
+padding:  5px 5px 5px 5px;
+}
+
+/* -------------------- Header Items -------------------- */
+/* ----- Logo ----- */
+.title {
+display: fixed;
+font-family: 'Pacifico', cursive;
+text-align: center;
+} 
+
+.logo {
+width: 100px;
+height: 100px;
+filter: invert(100%); 
+display: block;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+
+.logo:hover{
+filter: invert(.8);
+cursor: pointer;
+}
+
+/* ----- Navbar ----- */
+.navbar {
+width: 100%;
+overflow: auto;
+margin: 20px 0 0 0;
+background-color: #0F4C5C;
+}
+
+.navbar a {
+float: left;
+padding: 12px;
+color: white;
+text-decoration: none;
+font-size: 17px;
+}
+
+.navbar a:hover {
+background-color: #9A031E;
+color: white;
+}
+
+.active {
+background-color: #9A031E;
+}
+
+@media screen and (max-width: 500px) {
+.navbar a {
+float: none;
+display: block;
+}
+}
