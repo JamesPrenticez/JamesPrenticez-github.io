@@ -23,6 +23,12 @@ margin-left: 0;
 
 h1 {
     font-size: 4em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+a {
+  color: #5F0F40;
 }
 /* -------------------- Grid Container -------------------- */
 main {
@@ -32,7 +38,7 @@ grid-template-areas:
 "left middle right"
 "footer footer footer";
 grid-template-columns: 100px auto 100px;
-grid-template-rows: auto auto 150px;
+grid-template-rows: auto auto 200px;
 }
 
 /* -------------------- Grid Items -------------------- */
@@ -49,13 +55,18 @@ background-color: whitesmoke;
 
 middle {
 grid-area: middle;
-min-height: 500px;
-min-width: 500px;
 background-color: whitesmoke;
 display: flex;
 justify-content: center;
-padding:  5px 5px 5px 5px;
+padding:  10px 10px 10px 10px;
 color: black;
+}
+
+@media screen and (max-width: 500px) {
+middle {
+float: none;
+display: block;
+}
 }
 
 right {
@@ -67,9 +78,9 @@ footer {
 grid-area: footer;
 background-color: black;
 background-image: linear-gradient(to right, #E36414 , #FB8B24);
-display: flex;
-justify-content: center;
-padding:  5px 5px 5px 5px;
+display: inline-block;
+text-align: center;
+padding:  50px 5px 5px 5px;
 }
 
 /* -------------------- Header Items -------------------- */
@@ -87,8 +98,6 @@ filter: invert(100%);
 display: block;
 margin-left: auto;
 margin-right: auto;
-
-
 }
 
 .logo:hover{
@@ -127,3 +136,31 @@ float: none;
 display: block;
 }
 }
+
+/* -------------------- Tile Cards -------------------- */
+.card {
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+margin: 20px 10px 20px 10px;
+width: 200px;
+height: 400px;
+}
+
+.avatar {
+width: 200px;
+height: 200px;
+}
+
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+cursor: pointer;
+-webkit-transform: scale(1.05, 1.05);
+  transform: scale(1.05, 1.05);
+transition: 0.3s;
+}
+
+.container {
+padding: 2px 16px;
+display: inline-block;
+
+}
+
