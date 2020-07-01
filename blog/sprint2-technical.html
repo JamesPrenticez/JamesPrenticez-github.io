@@ -1,27 +1,62 @@
   <!DOCTYPE html>
 <html>
   <head>
-    <title>Stories and Legends (PAGE title) </title>
     <meta charset="UTF-8">
-    <link href="your-stylesheet-link-here.css" rel="stylesheet" type="text/css">
+    <meta name= "viewport" content= "width=device-width, initial-scale= 1.0">
+    <link rel="icon" type="image/png" href="../img/favicon/favicon-32x32.png">
+    <link href="../styles/article.css" rel="stylesheet" type="text/css">
+    <title>Blog</title>
   </head>
-  
   <body>
-    <h1>The Story of Te Houtaewa (PAGE heading)</h1>
-    <h2>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest runner.</em> (Optional SUB title) </h2>
-    <h3>10 November 2010</h3>
-    
-    <p>
-      Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
-    </p>
-    <p>
-      Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet potatoes) situated at the foot of the hill Whangatauatia.
-    </p>
-    <p>
-      While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately recognised.
-    </p>
-    
-    <!-- this is a comment. -->
+<!----------- Navbar ---------->
+<div class="navbar">
+<ul>
+  <li><a href="#"><i class="fa fa-fw fa-search"></i>Contact</a></li>
+  <li><a href="#"><i class="fa fa-fw fa-envelope"></i>Blog</a></li>
+  <li><a class="active" href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a><li>
+</ul>
+</div>
+
+<div class="container">
+
+<img src="../img/block.png" width="200" height="200">
+
+<p>The first this you need to know to understand positioning of elements inside a webpage is that element acts like a block inside a grid</p>
+
+<p>By default, div elements are set to <b>display: block</b> this means if you give them height/width properties and create a rectangle/square. Multiple div elements will inherently stack one on top of the next, vertically</p>
+
+<p>This contrasts with span elements which are by default set to <b>display: inline-block.</b> Now we can imagen that our blocks are waiting inline at the grocery store waiting to be served. </p>
+
+<img src="../img/div.png" width="200" height="200">
+
+<p>But how do we know where these blocks will appear on the screen? Will they be in the center, top-left, top-right or perhaps at the bottom of the page.</p>
+
+<img src="../img/span.png" width="200" height="200">
+
+<p>Remember the we said webpages are just like blocks displayed on a gird?</p>
+
+<img src="../img/axsis.png" width="200" height="200">
+
+<p>That grid like a piece of paper from your highschool maths book. Now lets imagen you got kicked outside the classroom for being disruptive and your friend has drawn a funny picture on your book, they then show you this picture through the window while you stand outside.</p>
+
+<p>That window is your <b>viewport</b> and your math book is our <b>webpage</b>.</p>
+
+<h3>Fixed</h3>
+<p>A fixed element is positioned relative to the viewport or the browser windows itself -not the underlying webpage. No matter if you scroll up and down the element will stay fixed to the window not the underlying grid. </p>
+
+<h3>Absolute</h3>
+<p>This type of positioning gives web developers 100% control. You can display the element exactly where you want it on the <b>webpage.</b> You can use the attributes such as: top, left, bottom, down and right to set its location</p>
+
+<p>Absolute positioning is inherited from the next parent element. If the child sits inside a parent element it will move inside that box. If no such parent exists then it will position relative to the underlying html.</p>
+
+<p>The most important thing to remember about absolute positing is that these elements are <b>removed from the flow</b> and do not and are not affected by other elements on the page. This is a serious thing to consider every time you use absolute positioning. Its overuse or improper use can limit the flexibility of your site</p>
+
+<h3>Relative(to iself)</h3>
+<p>This is rather confusing. If you set position: relative; on an element but no other positioning attributes (top, left, bottom or right), it will have no effect on it’s positioning at all.</p>
+
+<p>If you do give it some other positioning attribute, say, top: 100px right:100px, it will shift its position 100 pixels down and 100px left from where it would normally be on the <b>webpage</b>.</p>
+
+</div>
   
   </body>
 </html>
