@@ -1,0 +1,148 @@
+/* -------------------- Color Pallet -------------------- */
+/*
+Tyrian Purple: #5F0F40
+Ruby Red: #9A031E
+Dark Orange: #FB8B24
+Spanish Orange: #E36414
+Midnight Green: #0F4C5C
+*/
+/* -------------------- Super Globals -------------------- */
+body {
+height:100%;
+margin: 0px;
+font-family: verdana;
+color: white;
+background-color: whitesmoke;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
+h1 {
+    font-family: 'Eagle Lake', cursive;    
+    font-size: 4em;
+    margin: 0px;
+}
+
+h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+    font-size: 1em;
+    margin: 0px;
+    color: white;
+}
+
+p {
+color: black;
+}
+
+a {
+  color: #5F0F40;
+  text-decoration: none;
+}
+
+/* -------------------- Logo -------------------- */
+.title {
+text-align: center;
+padding: 20px 0px 100px 0px;
+} 
+
+/* -------------------- Nav Bar-------------------- */
+.navbar {
+width: 100%;
+overflow: auto;
+margin: 0px;
+position: static;
+top: 0;
+}
+
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.navbar li {
+  float: right;
+
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar li :hover{
+  color: #9A031E;
+  cursor: pointer;
+}
+
+.navbar .active {
+  color: #9A031E;
+}
+/* -------------------- Main Items -------------------- */
+header {
+width: 100%;
+height: 100%;
+margin: 0px;
+background-image: linear-gradient(to right, #E36414 , #FB8B24);
+clip-path: polygon(
+  0 0,
+  100% 0,
+  100% 100%,
+  0 calc(100% - 5vw)
+);
+}
+
+.middle {
+min-height: 600px;
+width: 100%;
+background-image: url(tree.png);
+background-size : 400px, 585px;
+background-repeat:no-repeat;
+Padding: 30px 0 50px 0;
+}
+
+footer {
+width: 100%;
+height: 200px;
+background-image: linear-gradient(to right, #E36414 , #FB8B24);
+display: inline-block;
+text-align: center;
+padding:  50px 0px 0px 0px;
+}
+/* -------------------- Tile Cards -------------------- */
+.card {
+margin: 10px auto 10px auto;
+width: 400px;
+height: 1em;
+padding: 10px 10px 10px 10px;
+box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+border-radius: 10px;
+background-color: black;
+}
+
+.card:hover {
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+cursor: pointer;
+-webkit-transform: scale(1.05, 1.05);
+transform: scale(1.05, 1.05);
+transition: 0.3s;
+}
+
+@media screen and (max-width: 800px) {
+p {
+color: green:
+}
+
+.card {
+background-color: black !important;
+}
+}
