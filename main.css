@@ -144,5 +144,10 @@ color: green:
 
 .card {
 background-color: black !important;
+width: 80%;
+}
+
+.middle {
+background-image: !important;
 }
 }
