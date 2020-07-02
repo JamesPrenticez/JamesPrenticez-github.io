@@ -1,8 +1,3 @@
-body {
-background-color: whitesmoke;
-font-family: verdana;
-margin: 0;
-}
 /* -------------------- Color Pallet -------------------- */
 /*
 Tyrian Purple: #5F0F40
@@ -12,6 +7,12 @@ Spanish Orange: #E36414
 Midnight Green: #0F4C5C
 */
 /* -------------------- Super Globals -------------------- */
+body {
+background-color: whitesmoke;
+font-family: verdana;
+margin: 0;
+}
+
 h1 {
 font-family: 'Eagle Lake', cursive;  
 font-size: 18px;
