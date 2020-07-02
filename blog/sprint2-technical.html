@@ -4,43 +4,32 @@
     <meta charset="UTF-8">
     <meta name= "viewport" content= "width=device-width, initial-scale= 1.0">
     <link rel="icon" type="image/png" href="../img/favicon/favicon-32x32.png">
+    <!---bootstrap CSS --->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">    
+    <!---FontAwsome Icons--->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--- Google Fonts --->
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+    <!---My CSS --->
     <link href="../styles/article.css" rel="stylesheet" type="text/css">
+
     <title>Blog</title>
   </head>
   <body>
 <!----------- Navbar ---------->
 <div class="navbar">
 <ul>
-  <li><a href="#"><i class="fa fa-fw fa-search"></i>Contact</a></li>
-  <li><a href="#"><i class="fa fa-fw fa-envelope"></i>Blog</a></li>
-  <li><a class="active" href="../index.html"><i class="fa fa-fw fa-home"></i> Home</a><li>
+  <li><a href="../index.html" ><i class="fa fa-arrow-left"></i> Back</a></li>
 </ul>
 </div>
 
 <div class="container">
 
-<img src="../img/block.png" width="200" height="200">
+<h1>Sprint 2 - Technical - Fixed, Relative and Absolute</h1>
 
-<p>The first this you need to know to understand positioning of elements inside a webpage is that element acts like a block inside a grid</p>
-
-<p>By default, div elements are set to <b>display: block</b> this means if you give them height/width properties and create a rectangle/square. Multiple div elements will inherently stack one on top of the next, vertically</p>
-
-<p>This contrasts with span elements which are by default set to <b>display: inline-block.</b> Now we can imagen that our blocks are waiting inline at the grocery store waiting to be served. </p>
-
-<img src="../img/div.png" width="200" height="200">
-
-<p>But how do we know where these blocks will appear on the screen? Will they be in the center, top-left, top-right or perhaps at the bottom of the page.</p>
-
-<img src="../img/span.png" width="200" height="200">
-
-<p>Remember the we said webpages are just like blocks displayed on a gird?</p>
-
-<img src="../img/axsis.png" width="200" height="200">
-
-<p>That grid like a piece of paper from your highschool maths book. Now lets imagen you got kicked outside the classroom for being disruptive and your friend has drawn a funny picture on your book, they then show you this picture through the window while you stand outside.</p>
-
-<p>That window is your <b>viewport</b> and your math book is our <b>webpage</b>.</p>
-
+<br>
+<div class="row">
+ <div class="col-md-12">
 <h3>Fixed</h3>
 <p>A fixed element is positioned relative to the viewport or the browser windows itself -not the underlying webpage. No matter if you scroll up and down the element will stay fixed to the window not the underlying grid. </p>
 
@@ -51,12 +40,55 @@
 
 <p>The most important thing to remember about absolute positing is that these elements are <b>removed from the flow</b> and do not and are not affected by other elements on the page. This is a serious thing to consider every time you use absolute positioning. Its overuse or improper use can limit the flexibility of your site</p>
 
-<h3>Relative(to iself)</h3>
+<h3>Relative(to iself)</h2>
 <p>This is rather confusing. If you set position: relative; on an element but no other positioning attributes (top, left, bottom or right), it will have no effect on it’s positioning at all.</p>
 
 <p>If you do give it some other positioning attribute, say, top: 100px right:100px, it will shift its position 100 pixels down and 100px left from where it would normally be on the <b>webpage</b>.</p>
+</div>
+
+  <div class="col-md-12">
+    <img class="mx-auto d-block" src="../img/block.png" width="300px" height="300">
+  </div>
+
+  <div class="col-md-10">
+    <p>The first this you need to know to understand positioning of elements inside a webpage is that element acts like a block inside a grid</p>
+    <p>By default, div elements are set to <b>display: block</b> this means if you give them height/width properties and create a rectangle/square. Multiple div elements will inherently stack one on top of the next, vertically</p>
+  </div>
+
+  <div class="col-md-2">
+    <img src="../img/div.png" width="50" height="150">
+  </div>
+
+  <div class="col-md-8">
+    <p>This contrasts with span elements which are by default set to <b>display: inline-block.</b> Now we can imagen that our blocks are waiting inline at the grocery store waiting to be served. </p>
+  </div>
+
+ <div class="col-md-4">
+    <img src="../img/span.png" width="150" height="50">
+  </div>
+
+  <div class="col-md-12">
+    <p>But how do we know where these blocks will appear on the screen? Will they be in the center, top-left, top-right or perhaps at the bottom of the page.</p> 
+    <p>Remember the we said webpages are just like blocks displayed on a gird?</p>
+  </div>
+
+<img class="mx-auto d-block" src="../img/axsis.png" width="300" height="300">
+
+<p>That grid like a piece of paper from your highschool maths book. Now lets imagen you got kicked outside the classroom for being disruptive and your friend has drawn a funny picture on your book, they then showed you this picture through the window while you stand outside.</p>
+
+<p>That window is your <b>viewport</b> and your math book is our <b>webpage</b>.</p>
 
 </div>
-  
+</div>
+
+</div>
+<div class="navbar">
+<ul>
+  <li><a href="../index.html" ><i class="fa fa-arrow-left"></i> Back</a></li>
+</ul>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>  
   </body>
 </html>

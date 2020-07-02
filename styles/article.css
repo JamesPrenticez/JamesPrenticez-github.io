@@ -3,15 +3,32 @@ background-color: whitesmoke;
 font-family: verdana;
 margin: 0;
 }
-
+/* -------------------- Color Pallet -------------------- */
+/*
+Tyrian Purple: #5F0F40
+Ruby Red: #9A031E
+Dark Orange: #FB8B24
+Spanish Orange: #E36414
+Midnight Green: #0F4C5C
+*/
+/* -------------------- Super Globals -------------------- */
 h1 {
+font-family: 'Eagle Lake', cursive;  
 font-size: 18px;
-color: darkred;
+color: #9A031E;
 }
 
 h2 {
+font-family: 'Eagle Lake', cursive;  
 font-size: 16px;
-color: darkorange;
+color: #5F0F40;
+}
+
+h3 {
+font-family: 'Eagle Lake', cursive;  
+font-size: 16px;
+font-weight: bold;
+color: #5F0F40;
 }
 
 p { 
@@ -23,13 +40,18 @@ img {
 display: inline-block;
 }
 
+::selection {
+color: white;
+background: black;
+}
 
 /* Container */
 .container {
 box-shadow: 20px 20px 20px 20px rgba(0,0,0,0.2);
 margin:auto;
 margin-top: 50px;
-width: 50%;
+margin-bottom: 50px;
+width: 75%;
 height: auto;
 background-color: whitesmoke;
 padding:50px;
@@ -53,7 +75,7 @@ position: relative;
 }
 
 .navbar li {
-  float: right;
+  float: left;
 }
 
 .navbar li a {
