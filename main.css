@@ -138,16 +138,8 @@ transition: 0.3s;
 }
 
 @media screen and (max-width: 800px) {
-p {
-color: green:
-}
-
 .card {
-background-color: black !important;
 width: 80%;
 }
 
-.middle {
-background-image: !important;
-}
 }
